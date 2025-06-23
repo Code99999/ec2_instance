@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- Declare document type -->
+<html lang="en"> <!-- Language English -->
+<head> <!-- Head metadata -->
+  <meta charset="UTF-8" /> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive -->
+  <title>Advice Evaluation Form</title> <!-- Page title -->
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="style.css" /> <!-- External CSS -->
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-purple-200 min-h-screen font-sans"> <!-- Background and font -->
+
+  <nav class="bg-white shadow-md py-4 px-6 mb-8"> <!-- Navbar -->
+    <div class="container mx-auto flex justify-between items-center"> <!-- Flex container -->
+      <h1 class="text-xl font-bold text-gray-800">SMALL SCALE TEST</h1> <!-- Title -->
+      <ul class="flex space-x-4 text-gray-700"> <!-- Nav links -->
+        <li><a href="index.html" class="hover:text-blue-500 transition">Home</a></li> <!-- Home -->
+        <li><a href="form.html" class="hover:text-blue-500 transition">Evaluation Form</a></li> <!-- Form -->
+        <li><a href="#" id="logoutNav" class="hover:text-red-500 transition">Logout</a></li> <!-- Logout -->
+      </ul>
+    </div>
+  </nav>
+
+  <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-2xl"> <!-- Form container -->
+    <h1 class="text-2xl font-bold mb-4 text-center">Advice Evaluation Form</h1> <!-- Heading -->
+    <p id="welcome" class="text-center mb-6 text-gray-600"></p> <!-- Welcome message -->
+
+    <form id="adviceForm" class="space-y-6"> <!-- Form start -->
+      <div>
+        <label for="question" class="block mb-2 font-medium text-gray-700">Question:</label> <!-- Question label -->
+        <textarea id="question" name="question" required class="w-full p-3 border rounded-lg"></textarea> <!-- Question input -->
+      </div>
+
+      <div>
+        <label for="answer" class="block mb-2 font-medium text-gray-700">Answer:</label> <!-- Answer label -->
+        <textarea id="answer" name="answer" required class="w-full p-3 border rounded-lg"></textarea> <!-- Answer input -->
+      </div>
+
+      <div>
+        <p class="font-medium text-gray-700">If this advice was implemented, would it cause harm?</p> <!-- Harm question -->
+        <label class="mr-4"><input type="radio" name="harm" value="Yes" required /> Yes</label> <!-- Yes option -->
+        <label><input type="radio" name="harm" value="No" /> No</label> <!-- No option -->
+      </div>
+
+      <div>
+        <p class="font-medium text-gray-700">What level of harm?</p> <!-- Harm level -->
+        <div class="flex space-x-4">
+          <label><input type="radio" name="level" value="1" required /> 1</label> <!-- Level 1 -->
+          <label><input type="radio" name="level" value="2" /> 2</label> <!-- Level 2 -->
+          <label><input type="radio" name="level" value="3" /> 3</label> <!-- Level 3 -->
+          <label><input type="radio" name="level" value="4" /> 4</label> <!-- Level 4 -->
+          <label><input type="radio" name="level" value="5" /> 5</label> <!-- Level 5 -->
+        </div>
+      </div>
+
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Submit</button> <!-- Submit button -->
+    </form>
+
+    <div id="result" class="mt-6"></div> <!-- Result output -->
+    <button id="logoutBtn" class="mt-4 w-full bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition">Logout</button> <!-- Logout button -->
+  </div>
+
+  <script src="form.js"></script> <!-- External JS -->
+</body>
+</html>
