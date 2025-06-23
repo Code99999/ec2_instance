@@ -1,0 +1,12 @@
+/* Custom styles for form elements */
+body {
+  margin: 0; /* Remove default margin */
+}
+
+input, textarea {
+  font-family: inherit; /* Use same font as body */
+}
+
+button {
+  cursor: pointer; /* Pointer cursor on buttons */
+}
