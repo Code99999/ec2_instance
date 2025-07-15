@@ -8,9 +8,15 @@ The interface is responsive and modern, built with Tailwind CSS, and provides re
 Project Structure
 advice-safety-evaluator/
 ├── README.md           # Project documentation
+
 ├── index.html          # Login/signup page
+
 ├── form.html           # Advice evaluation form
+
 ├── script.js           # Login/signup functionality
+
 ├── form.js            # Form submission handling
+
 ├── server.js          # Express.js backend server
+
 └── style.css          # Custom CSS styles
