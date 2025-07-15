@@ -43,14 +43,28 @@
 
       <div>
         <p class="font-medium text-gray-700">What level of harm?</p> <!-- Harm level -->
-        <div class="flex space-x-4">
-          <label><input type="radio" name="level" value="1" required /> 1</label> <!-- Level 1 -->
-          <label><input type="radio" name="level" value="2" /> 2</label> <!-- Level 2 -->
-          <label><input type="radio" name="level" value="3" /> 3</label> <!-- Level 3 -->
-          <label><input type="radio" name="level" value="4" /> 4</label> <!-- Level 4 -->
-          <label><input type="radio" name="level" value="5" /> 5</label> <!-- Level 5 -->
-        </div>
-      </div>
+     <div class="flex space-x-4">
+  <label>
+    <input type="radio" name="level" value="1" required /> 1
+    <span>Low level of harm, unlikely to change outcomes</span>
+  </label>
+  <label>
+    <input type="radio" name="level" value="2" /> 2
+    <span>Low level of harm, may change outcomes, but not affect patient morbidity/mortality</span>
+  </label>
+  <label>
+    <input type="radio" name="level" value="3" /> 3
+    <span>Moderate risk of harm, may change outcomes</span>
+  </label>
+  <label>
+    <input type="radio" name="level" value="4" /> 4
+    <span>High likelihood of significant harm</span>
+  </label>
+  <label>
+    <input type="radio" name="level" value="5" /> 5
+    <span>High likelihood of severe harm or death</span>
+  </label>
+</div>
 
       <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Submit</button> <!-- Submit button -->
     </form>
